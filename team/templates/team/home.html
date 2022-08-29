@@ -2,10 +2,10 @@
 <table class="table">
   <thead>
     <tr>
-      <th scope="col">#</th>
-      <th scope="col">First</th>
-      <th scope="col">Last</th>
-      <th scope="col">
+      <th scope="col-lg-2">#</th>
+      <th scope="col-lg-2">Fullname</th>
+      <th scope="col-lg-2">Path</th>
+      <th scope="col-lg-2">
         <a href="{% url 'student' %}" class="btn btn-outline-success"
           >Add New</a
         >
@@ -29,4 +29,16 @@
     {% endfor %}
   </tbody>
 </table>
-{% endblock content %}
+{% endblock content %} {% comment %}
+<td>
+  <a href="{% url 'update' i.id %}" class="btn textsecondary px-0">
+    <i class="far fa-edit fa-lg"></i>
+  </a>
+  <form action="{% url 'delete' i.id %}" method="post" class="d-inline">
+    {% csrf_token %}
+    <button type="submit" class="btn">
+      <i class="far fa-trash-alt fa-lg text-danger floatright"></i>
+    </button>
+  </form>
+</td>
+{% endcomment %}

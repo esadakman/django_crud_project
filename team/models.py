@@ -2,7 +2,7 @@ from django.db import models
 
 
 class Student(models.Model):
-    fullname = models.CharField('Full Name', max_length=50)
+    first_name = models.CharField('Full Name', max_length=50)
     phone = models.CharField(max_length=50, unique=True, blank=True, null=True)
     email = models.EmailField(
         max_length=154, unique=True, blank=True, null=True)
@@ -24,4 +24,4 @@ class Student(models.Model):
     path = models.CharField(max_length=20, choices=PATH)
 
     def __str__(self):
-        return f"{self.number} {self.fullname}"
+        return f"{self.number} {self.first_name}"
