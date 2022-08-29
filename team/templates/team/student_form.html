@@ -1,16 +1,25 @@
-{% extends 'team/home.html' %} 
-
-{% block content %}
-
+{% extends 'team/home.html' %} {% block content %} {% load crispy_forms_tags %}
 <h2>Student Add</h2>
-<div class="container">
-{% load crispy_forms_tags %}
-    <form action="" method="POST" enctype="multipart/form-data">
-        {% csrf_token %} 
-        {% comment %} {{form.as_p}} {% endcomment %}
-        {{ form | crispy }}
-        <input type="submit" value="Add" class="btn btn-primary" />
-        <input type="submit" value="Back To List" class="btn btn-primary" />
-    </form>
-</div>
+
+<form action="" method="post" autocomplete="off">
+  {% csrf_token %} {{form.fullname|as_crispy_field}}
+  {{form.email|as_crispy_field}} {{form.phone|as_crispy_field}}
+  {{form.gender|as_crispy_field}}
+  <div class="row">
+    <div class="col-md-4">{{form.number|as_crispy_field}}</div>
+    <div class="col-md-8">{{form.path|as_crispy_field}}</div>
+  </div>
+  <div class="mt-1 d-flex justify-content-between py-2">
+    <div class=" ">
+      <button type="submit" class="btn btn-success btn-block btn-lg">
+        <i class="fas fa-database"></i> Submit
+      </button>
+    </div>
+    <div class=" ">
+      <a href="{% url 'home' %}" class="btn btn-secondary btn-block btn-lg">
+        <i class="fas fa-stream"></i> Back to list
+      </a>
+    </div>
+  </div>
+</form>
 {% endblock content %}

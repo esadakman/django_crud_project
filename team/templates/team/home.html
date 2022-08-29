@@ -18,7 +18,7 @@
       <th scope="row">{{i.number}}</th>
       <td>{{ i.first_name }}</td>
       <td>{{ i.get_path_display }}</td>
-      <td>
+      <td class="d-flex">
         <a href="{% url 'update' i.id %}"
           ><i class="fa-solid fa-file-pen"></i></a
         ><a href="{% url 'delete' i.id %}"
