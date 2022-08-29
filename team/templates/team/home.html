@@ -1,13 +1,13 @@
 {% extends 'team/base.html' %} {% block content %}
-<table class="table">
+<table class="table table-striped  ">
   <thead>
-    <tr>
-      <th scope="col-lg-2">#</th>
-      <th scope="col-lg-2">Fullname</th>
-      <th scope="col-lg-2">Path</th>
-      <th scope="col-lg-2">
-        <a href="{% url 'student' %}" class="btn btn-outline-success"
-          >Add New</a
+    <tr >
+      <th >#</th>
+      <th >Full Name</th>
+      <th >Path</th>
+      <th class=" d-flex justify-content-center"">
+        <a href="{% url 'student' %}" class="btn btn-outline-success mt-2"
+          >+ Add New</a
         >
       </th>
     </tr>
@@ -16,13 +16,13 @@
     {% for i in students %}
     <tr>
       <th scope="row">{{i.number}}</th>
-      <td>{{ i.first_name }}</td>
+      <td>{{ i.first_name }}  </td>
       <td>{{ i.get_path_display }}</td>
-      <td class="d-flex">
+      <td class="d-flex justify-content-center">
         <a href="{% url 'update' i.id %}"
-          ><i class="fa-solid fa-file-pen"></i></a
+          ><i class="fa-solid fa-file-pen me-3 fa-lg text-secondary"></i></a
         ><a href="{% url 'delete' i.id %}"
-          ><i class="fa-solid fa-trash-can"></i
+          ><i class="fa-solid fa-trash-can fa-lg text-danger"></i
         ></a>
       </td>
     </tr>
