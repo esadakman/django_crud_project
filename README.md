@@ -1,6 +1,6 @@
 <!-- Please update value in the {}  -->
 
-<h1 align="center">ToDo App</h1>
+<h1 align="center">Django Crud</h1>
 
 <div align="center">
   <h3>
@@ -30,15 +30,15 @@
 
 ## Overview
 
-![screenshot](https://user-images.githubusercontent.com/16707738/92399059-5716eb00-f132-11ea-8b14-bcacdc8ec97b.png)
+![crud](https://user-images.githubusercontent.com/98649983/188640885-35c1c086-f852-4cb0-be13-71f60ec37e0f.gif)
+
 
 ### Built With
 
 <!-- This section should list any major frameworks that you built your project using. Here are a few examples.-->
 
 - HTML
-- CSS
-- JS
+- CSS 
 - Django
 - Bootstrap
 
@@ -66,11 +66,11 @@ $ git clone https://github.com/esadakman/django_crud_project.git
 
 ## Acknowledgements
 
-- Information for your projects
+- Practice Django to implement CRUD (Create, Read, Update, Delete) operations.
 
 ## Contact
 
-- Website [your-website.com](https://esadakman.github.io/)
-- GitHub [@your-username](https://github.com/esadakman)
-- Linkedin [@your-linkedin](https://www.linkedin.com/in/esadakman/)
+- Website [@esadakman](https://esadakman.github.io/)
+- GitHub [@esadakman](https://github.com/esadakman)
+- Linkedin [@esadakman](https://www.linkedin.com/in/esadakman/)
 
