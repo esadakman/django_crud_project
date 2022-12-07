@@ -3,7 +3,7 @@
 <h1 align="center">Django Crud</h1>
 
 <div align="center">
-  <h3>
+  <!-- <h3>
     <a href="https://esadakman-django-crud.herokuapp.com/">
       Demo
     </a>
@@ -12,7 +12,7 @@
       Project
     </a>
  
-  </h3>
+  </h3> -->
 </div>
 
 <!-- TABLE OF CONTENTS -->
